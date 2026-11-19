@@ -1,0 +1,33 @@
+# Environment credentials (DO NOT COMMIT)
+.env
+.env.local
+
+# Python cache and byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# PhonePe raw cloned data repository
+pulse/
+
+# Temporary databases (track only the production SQLite database)
+*.db
+*.sqlite3
+!phonepe_pulse.db
+
+# Clean data intermediate exports (can be re-generated via extract.py)
+data_clean/*.csv
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
